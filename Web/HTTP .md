@@ -8,3 +8,11 @@ Example:
 
      Link: https://en.wikipedia.org/wiki/Do_Not_Track
 - <h2>Content negotiation: https://en.wikipedia.org/wiki/Content_negotiation </h2>
+- <h2>HTTP status code </h2>
+ ![image](https://user-images.githubusercontent.com/100038173/163816224-a99c31a9-31ec-46b9-81cd-1dc610a6048f.png)
+- <h2>HTTP Compression</h2>
+https://en.wikipedia.org/wiki/HTTP_compression
+- <h2> HTTP vuln</h2>
+- HTTP request smuggling: https://en.wikipedia.org/wiki/HTTP_request_smuggling
+- HTTP response splitting: https://en.wikipedia.org/wiki/HTTP_response_splitting
+- HTTP parameter pollution: https://en.wikipedia.org/wiki/HTTP_parameter_pollution
