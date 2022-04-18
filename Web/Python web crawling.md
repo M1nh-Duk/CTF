@@ -1,0 +1,1 @@
+- Manual of request library: https://docs.python-requests.org/en/latest/user/quickstart/#make-a-request
