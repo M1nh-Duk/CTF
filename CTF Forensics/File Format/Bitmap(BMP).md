@@ -431,3 +431,7 @@
  - <strong>A bitmap file must start with 42 4D (offset 0 and 1)</strong>
  - <strong>If using BITMAPINFOHEADER (most common):<br>-The size of file header is 14 bytes, DIB header is 40 bytes -> Total 54. Therefore, the Pixel Data must start after the offset 54 and so in the file header the address of Pixel Data ( offset 0A) must be 36(hex) (values 54 in decimal).<br>Offset 0E (which starts the DIB header and also shows the number of bytes of DIB: 40 bytes) must be 28(hex) (values 40 in decimal).</strong>
  - <strong>Every number in the file format must be in hex</strong>
+<h3>Reference:</h3>
+
+ - https://en.wikipedia.org/wiki/BMP_file_format
+ - https://www.youtube.com/watch?v=UaQjGziw71E
