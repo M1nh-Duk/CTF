@@ -1,0 +1,2 @@
+- Serialization: https://en.wikipedia.org/wiki/Serialization
+- Side channel attack : https://en.wikipedia.org/wiki/Side-channel_attack
