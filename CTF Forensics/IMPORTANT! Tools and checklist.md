@@ -4,3 +4,4 @@
 - Forensics in general: https://trailofbits.github.io/ctf/forensics/
 - Stegarnography cheatsheet (checklist): https://pequalsnp-team.github.io/cheatsheet/steganography-101
 - Popular code : http://www.ericharshbarger.org/epp/code_sheet.pdf
+- Tool for QRcode: https://h3110w0r1d.com/qrazybox/
