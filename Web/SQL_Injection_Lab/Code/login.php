@@ -6,23 +6,24 @@ if ($_SERVER['REQUEST_METHOD']=='POST')
 {
         
     $username=$_POST['username'];
+    echo $username;
     $password=$_POST['password'];
         
-     if (!empty($username)&&!empty($password)&&!is_numeric($username))
+     if (!empty($username)&&!empty($password))
      {  
-        $query="select * from login where Username='$username' and Passwd='$password' ";
+        $query="select * from login where Username='$username' and Passwd='$password'";
         $result = mysqli_query($con,$query);
         
         if ($result && mysqli_num_rows($result)>0)
             {
                 $user_data = mysqli_fetch_assoc($result);
                 if ($user_data['Passwd']===$password){
-                    $_SESSION['user_id']= $user_data['user_id'];
+                    setcookie("userID",(string)$user_data['user_id'],0,"/");
                     
-                
             }
             else 
                 {
+                    setcookie("userID","aaaaaaaaaaa",0,"/"); //set cookie for sqli unrecognized user
                     echo "Incorrect username or password!<br />";
                     echo "SQL Query: $query" ;
                 }
@@ -75,6 +76,9 @@ if ($_SERVER['REQUEST_METHOD']=='POST')
                 <br>
                 <div style="padding-left:100px;" ><input id="button" type="submit"  value="Submit"><br></div>
             </form>        
+            <div>
+                <a href="sign-up.php">Don't have an account? Click here to sign up</a>   
+            </div>
     </div>
     </body>
 </html>
